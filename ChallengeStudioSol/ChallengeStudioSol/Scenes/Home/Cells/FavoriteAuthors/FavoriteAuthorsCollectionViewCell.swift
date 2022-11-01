@@ -8,10 +8,14 @@
 import UIKit
 
 class FavoriteAuthorsCollectionViewCell: UICollectionViewCell {
-
+    // MARK: Outlets
+    @IBOutlet weak var imageAuthor: UIImageView!
+    @IBOutlet weak var labelAuthor: UILabel!
+    @IBOutlet weak var labelNumberOfBooks: UILabel!
+    
+    // MARK: Override
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        imageAuthor.layer.cornerRadius = 10
     }
-
 }

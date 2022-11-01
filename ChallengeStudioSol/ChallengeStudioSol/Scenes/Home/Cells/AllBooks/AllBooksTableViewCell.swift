@@ -1,5 +1,5 @@
 //
-//  FavoriteBooksCollectionViewCell.swift
+//  AllBooksTableViewCell.swift
 //  ChallengeStudioSol
 //
 //  Created by Fran Martins on 01/11/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FavoriteBooksCollectionViewCell: UICollectionViewCell {
+class AllBooksTableViewCell: UITableViewCell {
     // MARK: Outlets
     @IBOutlet weak var labelAuthor: UILabel!
     @IBOutlet weak var labelBookName: UILabel!
@@ -16,7 +16,6 @@ class FavoriteBooksCollectionViewCell: UICollectionViewCell {
     // MARK: Override
     override func awakeFromNib() {
         super.awakeFromNib()
-        imageBook.layer.cornerRadius = 15
+        imageBook.layer.cornerRadius = 10
     }
-
 }

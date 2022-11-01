@@ -1,21 +1,77 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FavoriteBooksCollectionViewCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gPy-Md-DcP" customClass="FavoriteBooksCollectionViewCell" customModule="StudioSolChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="252"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <rect key="frame" x="0.0" y="0.0" width="150" height="252"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="40p-fx-ZnA">
+                        <rect key="frame" x="10" y="0.0" width="125" height="194"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="194" id="1NL-P7-xIi"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do filme fica aqui" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhN-uB-xBD">
+                        <rect key="frame" x="15" y="196" width="120" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="u4v-8L-NGB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" name="labelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RP-Y1-gWP">
+                        <rect key="frame" x="15" y="233" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="autorColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
             </view>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <viewLayoutGuide key="safeArea" id="jtV-RV-Keo"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="8RP-Y1-gWP" firstAttribute="leading" secondItem="gPy-Md-DcP" secondAttribute="leading" constant="15" id="DXg-Ib-DBT"/>
+                <constraint firstItem="40p-fx-ZnA" firstAttribute="leading" secondItem="gPy-Md-DcP" secondAttribute="leading" constant="10" id="HX7-Ec-3rk"/>
+                <constraint firstItem="8RP-Y1-gWP" firstAttribute="top" secondItem="YhN-uB-xBD" secondAttribute="bottom" constant="1" id="JSU-v1-RF9"/>
+                <constraint firstItem="YhN-uB-xBD" firstAttribute="leading" secondItem="gPy-Md-DcP" secondAttribute="leading" constant="15" id="NXA-94-mej"/>
+                <constraint firstAttribute="trailing" secondItem="YhN-uB-xBD" secondAttribute="trailing" constant="15" id="Pyq-mn-LSh"/>
+                <constraint firstItem="40p-fx-ZnA" firstAttribute="top" secondItem="gPy-Md-DcP" secondAttribute="top" id="TWX-V3-BIa"/>
+                <constraint firstItem="40p-fx-ZnA" firstAttribute="trailing" secondItem="YhN-uB-xBD" secondAttribute="trailing" id="eRp-kt-LbR"/>
+                <constraint firstItem="YhN-uB-xBD" firstAttribute="top" secondItem="40p-fx-ZnA" secondAttribute="bottom" constant="2" id="erg-3I-oVO"/>
+            </constraints>
+            <size key="customSize" width="150" height="252"/>
+            <connections>
+                <outlet property="imageBook" destination="40p-fx-ZnA" id="gEY-yh-1Hn"/>
+                <outlet property="labelAuthor" destination="8RP-Y1-gWP" id="GG1-13-ngv"/>
+                <outlet property="labelBookName" destination="YhN-uB-xBD" id="1zq-6A-uuE"/>
+            </connections>
+            <point key="canvasLocation" x="204.34782608695653" y="125.22321428571428"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="book" width="136" height="198"/>
+        <namedColor name="autorColor">
+            <color red="0.45899999141693115" green="0.45899999141693115" blue="0.45899999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="labelColor">
+            <color red="0.33300000429153442" green="0.33300000429153442" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

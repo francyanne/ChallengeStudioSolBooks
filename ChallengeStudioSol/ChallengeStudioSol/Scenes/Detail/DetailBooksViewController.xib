@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailBooksViewController" customModule="ChallengeStudioSol" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonHeart" destination="EQS-Cz-4Rg" id="wq2-gK-tPC"/>
+                <outlet property="imageBook" destination="Wom-2Z-U3D" id="kVl-Nd-AVE"/>
+                <outlet property="labelNameAuthor" destination="JLx-iu-jly" id="3H5-8K-h2I"/>
+                <outlet property="labelNameBook" destination="gAm-HH-jYb" id="XcD-dK-7m6"/>
+                <outlet property="labelTextBook" destination="YUK-up-Tyg" id="NyA-MG-kK9"/>
+                <outlet property="view" destination="aPs-n0-tEz" id="BvV-Pk-saJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="aPs-n0-tEz">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="950"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="- Foto Livro" translatesAutoresizingMaskIntoConstraints="NO" id="Wom-2Z-U3D">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="582"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="582" id="hgJ-Dp-YG2"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="- Base branca" translatesAutoresizingMaskIntoConstraints="NO" id="ZpT-je-mjp">
+                    <rect key="frame" x="0.0" y="308" width="414" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="600" id="oqr-cH-Njp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O duque e eu (Os bridgertons Livro 1)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAm-HH-jYb">
+                    <rect key="frame" x="20" y="340" width="324" height="48"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQS-Cz-4Rg">
+                    <rect key="frame" x="350" y="340" width="44" height="33"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="heart" title=""/>
+                    <connections>
+                        <action selector="handlerButtonHeart:" destination="-1" eventType="touchUpInside" id="rIp-pL-LQA"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="- Pretinho proteção" translatesAutoresizingMaskIntoConstraints="NO" id="nDE-nN-BCB">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="170" id="wWW-78-pAW"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXh-JZ-JBj">
+                    <rect key="frame" x="0.0" y="437" width="414" height="479"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZhG-8G-jl9">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="479"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZr-dJ-7bs">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="527.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUK-up-Tyg">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="527.5"/>
+                                            <string key="text">Simon Basset, o irresistível duque de Hastings, acaba de retornar a Londres depois de seis anos viajando pelo mundo. Rico, bonito e solteiro, ele é um prato cheio para as mães da alta sociedade, que só pensam em arrumar um bom partido para suas filhas.
+
+Simon, porém, tem o firme propósito de nunca se casar. Assim, para se livrar das garras dessas mulheres, precisa de um plano infalível.
+
+É quando entra em cena Daphne Bridgerton, a irmã mais nova de seu melhor amigo. Apesar de espirituosa e dona de uma personalidade marcante, todos os homens que se interessam por ela são velhos demais, pouco inteligentes ou destituídos de qualquer tipo de charme. E os que têm potencial para ser bons maridos só a veem como uma boa amiga.
+
+A ideia de Simon é fingir que a corteja. Dessa forma, de uma tacada só, ele conseguirá afastar as jovens obcecadas por um marido e atrairá vários pretendentes para Daphne. Afinal, se um duque está interessado nela, a jovem deve ter mais atrativos do que aparenta.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="YUK-up-Tyg" secondAttribute="trailing" constant="20" id="f00-Ic-ma6"/>
+                                        <constraint firstItem="YUK-up-Tyg" firstAttribute="top" secondItem="fZr-dJ-7bs" secondAttribute="top" id="gAb-1Q-nMW"/>
+                                        <constraint firstAttribute="bottom" secondItem="YUK-up-Tyg" secondAttribute="bottom" id="jWj-fb-c3e"/>
+                                        <constraint firstItem="YUK-up-Tyg" firstAttribute="leading" secondItem="fZr-dJ-7bs" secondAttribute="leading" constant="20" id="wxw-Xg-gRl"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="fZr-dJ-7bs" secondAttribute="bottom" id="0kx-Em-90f"/>
+                                <constraint firstItem="fZr-dJ-7bs" firstAttribute="centerX" secondItem="ZhG-8G-jl9" secondAttribute="centerX" id="WOX-4C-4Ez"/>
+                                <constraint firstItem="fZr-dJ-7bs" firstAttribute="top" secondItem="ZhG-8G-jl9" secondAttribute="top" id="kQC-AB-OiT"/>
+                                <constraint firstItem="fZr-dJ-7bs" firstAttribute="leading" secondItem="ZhG-8G-jl9" secondAttribute="leading" id="rf6-Rc-V66"/>
+                                <constraint firstAttribute="trailing" secondItem="fZr-dJ-7bs" secondAttribute="trailing" id="sUQ-by-5E0"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ZhG-8G-jl9" secondAttribute="bottom" id="XAD-Sw-aF6"/>
+                        <constraint firstAttribute="trailing" secondItem="ZhG-8G-jl9" secondAttribute="trailing" id="Ymg-Fn-JcW"/>
+                        <constraint firstItem="ZhG-8G-jl9" firstAttribute="top" secondItem="VXh-JZ-JBj" secondAttribute="top" id="gRx-NA-aad"/>
+                        <constraint firstItem="ZhG-8G-jl9" firstAttribute="leading" secondItem="VXh-JZ-JBj" secondAttribute="leading" id="zvS-tH-oj1"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Julia Quinn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLx-iu-jly">
+                    <rect key="frame" x="20" y="396" width="85" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="autorColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydL-g0-DGM">
+                    <rect key="frame" x="24" y="54" width="20" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Lk6-aS-apX"/>
+                        <constraint firstAttribute="height" constant="17" id="eL1-fK-Zlm"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="Anterior (2)" title=""/>
+                    <connections>
+                        <action selector="handlerButtonBack:" destination="-1" eventType="touchUpInside" id="kOd-pf-0qc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJH-6k-rZf">
+                    <rect key="frame" x="362" y="47.5" width="28" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="Combined Shape" title=""/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="7qM-Eo-1T2"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ZpT-je-mjp" firstAttribute="trailing" secondItem="7qM-Eo-1T2" secondAttribute="trailing" id="1bT-8T-9BI"/>
+                <constraint firstItem="VXh-JZ-JBj" firstAttribute="leading" secondItem="7qM-Eo-1T2" secondAttribute="leading" id="1jl-xz-5Eo"/>
+                <constraint firstItem="Wom-2Z-U3D" firstAttribute="top" secondItem="aPs-n0-tEz" secondAttribute="top" id="26O-cn-tYS"/>
+                <constraint firstItem="7qM-Eo-1T2" firstAttribute="trailing" secondItem="gAm-HH-jYb" secondAttribute="trailing" constant="70" id="69r-d2-i6W"/>
+                <constraint firstItem="7qM-Eo-1T2" firstAttribute="trailing" secondItem="nDE-nN-BCB" secondAttribute="trailing" id="6P1-Th-lD1"/>
+                <constraint firstItem="gAm-HH-jYb" firstAttribute="leading" secondItem="7qM-Eo-1T2" secondAttribute="leading" constant="20" id="73v-6q-Xi5"/>
+                <constraint firstItem="ZpT-je-mjp" firstAttribute="top" secondItem="7qM-Eo-1T2" secondAttribute="top" constant="264" id="ATg-cV-dTq"/>
+                <constraint firstItem="ZpT-je-mjp" firstAttribute="leading" secondItem="7qM-Eo-1T2" secondAttribute="leading" id="D2L-BE-aKO"/>
+                <constraint firstItem="Wom-2Z-U3D" firstAttribute="trailing" secondItem="7qM-Eo-1T2" secondAttribute="trailing" id="DUh-pR-Q8K"/>
+                <constraint firstItem="VXh-JZ-JBj" firstAttribute="top" secondItem="JLx-iu-jly" secondAttribute="bottom" constant="20" id="GSB-FH-vUg"/>
+                <constraint firstItem="nDE-nN-BCB" firstAttribute="top" secondItem="aPs-n0-tEz" secondAttribute="top" id="J9u-XB-bNV"/>
+                <constraint firstItem="nDE-nN-BCB" firstAttribute="leading" secondItem="7qM-Eo-1T2" secondAttribute="leading" id="LMS-K2-pfW"/>
+                <constraint firstItem="7qM-Eo-1T2" firstAttribute="trailing" secondItem="oJH-6k-rZf" secondAttribute="trailing" constant="24" id="QuV-Wz-KKP"/>
+                <constraint firstItem="JLx-iu-jly" firstAttribute="top" secondItem="gAm-HH-jYb" secondAttribute="bottom" constant="8" id="UUQ-WK-iCn"/>
+                <constraint firstItem="oJH-6k-rZf" firstAttribute="centerY" secondItem="ydL-g0-DGM" secondAttribute="centerY" id="Uoc-BB-rqk"/>
+                <constraint firstItem="ydL-g0-DGM" firstAttribute="top" secondItem="7qM-Eo-1T2" secondAttribute="top" constant="10" id="VWA-Os-JiZ"/>
+                <constraint firstItem="ydL-g0-DGM" firstAttribute="leading" secondItem="7qM-Eo-1T2" secondAttribute="leading" constant="24" id="WYn-ln-KBn"/>
+                <constraint firstItem="7qM-Eo-1T2" firstAttribute="trailing" secondItem="EQS-Cz-4Rg" secondAttribute="trailing" constant="20" id="YQo-9L-nHN"/>
+                <constraint firstItem="JLx-iu-jly" firstAttribute="leading" secondItem="7qM-Eo-1T2" secondAttribute="leading" constant="20" id="ahj-jn-gOg"/>
+                <constraint firstItem="7qM-Eo-1T2" firstAttribute="bottom" secondItem="VXh-JZ-JBj" secondAttribute="bottom" id="bas-b6-8Nw"/>
+                <constraint firstItem="EQS-Cz-4Rg" firstAttribute="top" secondItem="7qM-Eo-1T2" secondAttribute="top" constant="296" id="beU-iD-ftD"/>
+                <constraint firstItem="VXh-JZ-JBj" firstAttribute="trailing" secondItem="7qM-Eo-1T2" secondAttribute="trailing" id="i1q-ie-1mA"/>
+                <constraint firstItem="gAm-HH-jYb" firstAttribute="top" secondItem="7qM-Eo-1T2" secondAttribute="top" constant="296" id="kAO-dL-h7m"/>
+                <constraint firstItem="Wom-2Z-U3D" firstAttribute="leading" secondItem="7qM-Eo-1T2" secondAttribute="leading" id="psb-Vd-s57"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="110.49107142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="- Base branca" width="360" height="841"/>
+        <image name="- Foto Livro" width="360" height="519"/>
+        <image name="- Pretinho proteção" width="360" height="153"/>
+        <image name="Anterior (2)" width="16" height="14"/>
+        <image name="Combined Shape" width="4" height="16"/>
+        <image name="heart" width="20" height="19"/>
+        <namedColor name="autorColor">
+            <color red="0.45899999141693115" green="0.45899999141693115" blue="0.45899999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

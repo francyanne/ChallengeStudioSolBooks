@@ -1,21 +1,77 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FavoriteAuthorsCollectionViewCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cells" id="BgW-kW-Khc" customClass="FavoriteAuthorsCollectionViewCell" customModule="StudioSolChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="258" height="87"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <rect key="frame" x="0.0" y="0.0" width="258" height="87"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="- Base Card" translatesAutoresizingMaskIntoConstraints="NO" id="78V-Ws-nJ0">
+                        <rect key="frame" x="10" y="0.0" width="248" height="87"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="- Foto" translatesAutoresizingMaskIntoConstraints="NO" id="aG4-7a-f1n">
+                        <rect key="frame" x="11" y="1" width="63" height="67"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="67" id="DC5-pv-OU5"/>
+                            <constraint firstAttribute="width" constant="63" id="SXj-Qo-ml4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connie Brockway" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysn-Iz-fUl">
+                        <rect key="frame" x="94" y="15" width="132" height="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <color key="textColor" name="labelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 livros" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rl4-RL-9ap">
+                        <rect key="frame" x="94" y="37" width="47" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="autorColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
             </view>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <viewLayoutGuide key="safeArea" id="4ti-hz-Sno"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="78V-Ws-nJ0" secondAttribute="trailing" id="Dyp-JE-vHH"/>
+                <constraint firstItem="78V-Ws-nJ0" firstAttribute="leading" secondItem="BgW-kW-Khc" secondAttribute="leading" constant="10" id="GqS-cm-sZm"/>
+                <constraint firstItem="aG4-7a-f1n" firstAttribute="top" secondItem="BgW-kW-Khc" secondAttribute="top" constant="1" id="IMR-Yx-eu8"/>
+                <constraint firstAttribute="bottom" secondItem="78V-Ws-nJ0" secondAttribute="bottom" id="RUi-P2-new"/>
+                <constraint firstItem="aG4-7a-f1n" firstAttribute="leading" secondItem="BgW-kW-Khc" secondAttribute="leading" constant="11" id="V1w-9Z-ttI"/>
+                <constraint firstItem="Rl4-RL-9ap" firstAttribute="top" secondItem="ysn-Iz-fUl" secondAttribute="bottom" constant="2" id="VXE-kf-05u"/>
+                <constraint firstItem="ysn-Iz-fUl" firstAttribute="top" secondItem="BgW-kW-Khc" secondAttribute="top" constant="15" id="WPa-Am-p8o"/>
+                <constraint firstItem="Rl4-RL-9ap" firstAttribute="leading" secondItem="aG4-7a-f1n" secondAttribute="trailing" constant="20" id="YeX-yp-2KA"/>
+                <constraint firstItem="ysn-Iz-fUl" firstAttribute="leading" secondItem="aG4-7a-f1n" secondAttribute="trailing" constant="20" id="t4v-9x-CLA"/>
+                <constraint firstItem="78V-Ws-nJ0" firstAttribute="top" secondItem="BgW-kW-Khc" secondAttribute="top" id="tEC-lf-Q8C"/>
+            </constraints>
+            <size key="customSize" width="258" height="87"/>
+            <connections>
+                <outlet property="imageAuthor" destination="aG4-7a-f1n" id="XLa-m1-6hY"/>
+                <outlet property="labelAuthor" destination="ysn-Iz-fUl" id="LZ8-KI-19V"/>
+                <outlet property="labelNumberOfBooks" destination="Rl4-RL-9ap" id="2Q3-SP-7du"/>
+            </connections>
+            <point key="canvasLocation" x="281.15942028985512" y="98.102678571428569"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="- Base Card" width="248" height="69"/>
+        <image name="- Foto" width="63" height="67"/>
+        <namedColor name="autorColor">
+            <color red="0.45899999141693115" green="0.45899999141693115" blue="0.45899999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="labelColor">
+            <color red="0.33300000429153442" green="0.33300000429153442" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

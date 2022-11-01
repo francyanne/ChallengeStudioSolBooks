@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C3B3FE42911D69700BB3E2B /* DetailBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B3FE22911D69700BB3E2B /* DetailBooksViewController.swift */; };
+		5C3B3FE52911D69700BB3E2B /* DetailBooksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3B3FE32911D69700BB3E2B /* DetailBooksViewController.xib */; };
+		5C3B3FE72911D81400BB3E2B /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C3B3FE62911D81400BB3E2B /* empty.json */; };
+		5C3B3FEA2911D86600BB3E2B /* AllBooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B3FE82911D86600BB3E2B /* AllBooksTableViewCell.swift */; };
+		5C3B3FEB2911D86600BB3E2B /* AllBooksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3B3FE92911D86600BB3E2B /* AllBooksTableViewCell.xib */; };
 		5C705F362911CD9700971C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C705F352911CD9700971C46 /* AppDelegate.swift */; };
 		5C705F3F2911CD9800971C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C705F3E2911CD9800971C46 /* Assets.xcassets */; };
 		5C705F422911CD9800971C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C705F402911CD9800971C46 /* LaunchScreen.storyboard */; };
@@ -24,13 +29,17 @@
 		5C705F6D2911D08300971C46 /* FavoriteBooksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C705F6B2911D08300971C46 /* FavoriteBooksCollectionViewCell.xib */; };
 		5C705F702911D09500971C46 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C705F6E2911D09500971C46 /* CategoryCollectionViewCell.swift */; };
 		5C705F712911D09500971C46 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C705F6F2911D09500971C46 /* CategoryCollectionViewCell.xib */; };
-		5C705F742911D0A000971C46 /* AllBooksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C705F722911D0A000971C46 /* AllBooksCollectionViewCell.swift */; };
-		5C705F752911D0A000971C46 /* AllBooksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C705F732911D0A000971C46 /* AllBooksCollectionViewCell.xib */; };
+		5C8E178F2911D51A00692F64 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8E178E2911D51A00692F64 /* HomeViewModel.swift */; };
 		CDF82FB218D2353CC1CA7437 /* Pods_ChallengeStudioSol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18766672967AD0AEBEF2F987 /* Pods_ChallengeStudioSol.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18766672967AD0AEBEF2F987 /* Pods_ChallengeStudioSol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeStudioSol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3B3FE22911D69700BB3E2B /* DetailBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBooksViewController.swift; sourceTree = "<group>"; };
+		5C3B3FE32911D69700BB3E2B /* DetailBooksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailBooksViewController.xib; sourceTree = "<group>"; };
+		5C3B3FE62911D81400BB3E2B /* empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
+		5C3B3FE82911D86600BB3E2B /* AllBooksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBooksTableViewCell.swift; sourceTree = "<group>"; };
+		5C3B3FE92911D86600BB3E2B /* AllBooksTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllBooksTableViewCell.xib; sourceTree = "<group>"; };
 		5C705F322911CD9700971C46 /* ChallengeStudioSol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeStudioSol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C705F352911CD9700971C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C705F3E2911CD9800971C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,8 +59,7 @@
 		5C705F6B2911D08300971C46 /* FavoriteBooksCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteBooksCollectionViewCell.xib; sourceTree = "<group>"; };
 		5C705F6E2911D09500971C46 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		5C705F6F2911D09500971C46 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
-		5C705F722911D0A000971C46 /* AllBooksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBooksCollectionViewCell.swift; sourceTree = "<group>"; };
-		5C705F732911D0A000971C46 /* AllBooksCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllBooksCollectionViewCell.xib; sourceTree = "<group>"; };
+		5C8E178E2911D51A00692F64 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7AC2C19E2084C6D712FF4EC0 /* Pods-ChallengeStudioSol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeStudioSol.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeStudioSol/Pods-ChallengeStudioSol.debug.xcconfig"; sourceTree = "<group>"; };
 		8D5EF96F91BA6FE373F6CE5F /* Pods-ChallengeStudioSol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeStudioSol.release.xcconfig"; path = "Target Support Files/Pods-ChallengeStudioSol/Pods-ChallengeStudioSol.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +97,6 @@
 		5C705F342911CD9700971C46 /* ChallengeStudioSol */ = {
 			isa = PBXGroup;
 			children = (
-				5C705F5E2911CF8B00971C46 /* books.json */,
 				5C705F542911CE8300971C46 /* Scenes */,
 				5C705F4B2911CE0200971C46 /* Commons */,
 				5C705F4A2911CDA500971C46 /* Sources */,
@@ -101,6 +108,8 @@
 		5C705F492911CD9D00971C46 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5C3B3FE62911D81400BB3E2B /* empty.json */,
+				5C705F5E2911CF8B00971C46 /* books.json */,
 				5C705F3E2911CD9800971C46 /* Assets.xcassets */,
 				5C705F402911CD9800971C46 /* LaunchScreen.storyboard */,
 				5C705F432911CD9800971C46 /* Info.plist */,
@@ -145,8 +154,9 @@
 		5C705F542911CE8300971C46 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				5C705F572911CF3800971C46 /* Home */,
+				5C8E17902911D53B00692F64 /* Detail */,
 				5C705F552911CF2000971C46 /* PatternEmptyViewController.swift */,
+				5C705F572911CF3800971C46 /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -158,6 +168,7 @@
 				5C705F582911CF3D00971C46 /* Model */,
 				5C705F5A2911CF6700971C46 /* HomeViewController.swift */,
 				5C705F5B2911CF6700971C46 /* HomeViewController.xib */,
+				5C8E178E2911D51A00692F64 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -211,10 +222,19 @@
 		5C705F652911D04200971C46 /* AllBooks */ = {
 			isa = PBXGroup;
 			children = (
-				5C705F722911D0A000971C46 /* AllBooksCollectionViewCell.swift */,
-				5C705F732911D0A000971C46 /* AllBooksCollectionViewCell.xib */,
+				5C3B3FE82911D86600BB3E2B /* AllBooksTableViewCell.swift */,
+				5C3B3FE92911D86600BB3E2B /* AllBooksTableViewCell.xib */,
 			);
 			path = AllBooks;
+			sourceTree = "<group>";
+		};
+		5C8E17902911D53B00692F64 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5C3B3FE22911D69700BB3E2B /* DetailBooksViewController.swift */,
+				5C3B3FE32911D69700BB3E2B /* DetailBooksViewController.xib */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		743519ECA02EAE53D082FF5B /* Pods */ = {
@@ -295,12 +315,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C705F5F2911CF8B00971C46 /* books.json in Resources */,
+				5C3B3FE72911D81400BB3E2B /* empty.json in Resources */,
 				5C705F712911D09500971C46 /* CategoryCollectionViewCell.xib in Resources */,
+				5C3B3FE52911D69700BB3E2B /* DetailBooksViewController.xib in Resources */,
 				5C705F6D2911D08300971C46 /* FavoriteBooksCollectionViewCell.xib in Resources */,
 				5C705F422911CD9800971C46 /* LaunchScreen.storyboard in Resources */,
 				5C705F3F2911CD9800971C46 /* Assets.xcassets in Resources */,
-				5C705F752911D0A000971C46 /* AllBooksCollectionViewCell.xib in Resources */,
 				5C705F692911D06900971C46 /* FavoriteAuthorsCollectionViewCell.xib in Resources */,
+				5C3B3FEB2911D86600BB3E2B /* AllBooksTableViewCell.xib in Resources */,
 				5C705F5D2911CF6700971C46 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,12 +380,14 @@
 				5C705F532911CE3F00971C46 /* UIImage.swift in Sources */,
 				5C705F512911CE3800971C46 /* UIColor.swift in Sources */,
 				5C705F612911CFD200971C46 /* HomeModel.swift in Sources */,
+				5C3B3FE42911D69700BB3E2B /* DetailBooksViewController.swift in Sources */,
 				5C705F562911CF2000971C46 /* PatternEmptyViewController.swift in Sources */,
 				5C705F362911CD9700971C46 /* AppDelegate.swift in Sources */,
 				5C705F702911D09500971C46 /* CategoryCollectionViewCell.swift in Sources */,
-				5C705F742911D0A000971C46 /* AllBooksCollectionViewCell.swift in Sources */,
+				5C8E178F2911D51A00692F64 /* HomeViewModel.swift in Sources */,
 				5C705F5C2911CF6700971C46 /* HomeViewController.swift in Sources */,
 				5C705F6C2911D08300971C46 /* FavoriteBooksCollectionViewCell.swift in Sources */,
+				5C3B3FEA2911D86600BB3E2B /* AllBooksTableViewCell.swift in Sources */,
 				5C705F682911D06900971C46 /* FavoriteAuthorsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,7 +533,6 @@
 				INFOPLIST_FILE = ChallengeStudioSol/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -538,7 +561,6 @@
 				INFOPLIST_FILE = ChallengeStudioSol/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
