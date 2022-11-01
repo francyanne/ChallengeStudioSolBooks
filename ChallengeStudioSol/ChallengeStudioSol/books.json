@@ -1,0 +1,179 @@
+{
+  "data": {
+    "favoriteBooks": [
+      {
+        "name": "Clean Code: A Handbook of Agile Software Craftsmanship",
+        "author": "Robert Cecil Martin",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/clean-code.jpg"
+      },
+      {
+        "name": "The Clean Coder: A Code of Conduct for Professional Programmers",
+        "author": "Robert Cecil Martin",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/the-clean-coder.jpg"
+      },
+      {
+        "name": "Lonely Planet Chile & Easter Island",
+        "author": "Carolyn McCarthy",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/lonely-planet-chile-e-easter-island.jpg"
+      },
+      {
+        "name": "Lonely Planet Southwest USA",
+        "author": "Carolyn McCarthy ",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/lonely-planet-southwest-usa.jpg"
+      },
+      {
+        "name": "It: A Novel",
+        "author": "Stephen King",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/it-a-novel.jpg"
+      },
+      {
+        "name": "The Hobbit",
+        "author": "J. R. R. Tolkien",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/the-hobbit.jpg"
+      },
+      {
+        "name": "The Silmarillion",
+        "author": "J. R. R. Tolkien",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/the-silmarillion.jpg"
+      },
+      {
+        "name": "O Evangelho Segundo um Humorista",
+        "author": "Afonso Padilha",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/o-evangelho-segundo-um-humorista.jpg"
+      },
+      {
+        "name": "The Return",
+        "author": "Nicholas Sparks",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/the-return.jpg"
+      }
+    ],
+    "favoriteAuthors": [
+      {
+        "name": "Robert Cecil Martin",
+        "booksCount": 4,
+        "picture": "https://sscdn.co/gcs/studiosol/2022/mobile/author/uncle-bob.jpg"
+      },
+      {
+        "name": "J. R. R. Tolkien",
+        "booksCount": 4,
+        "picture": "https://sscdn.co/gcs/studiosol/2022/mobile/author/j-r-r-tolkien.jpg"
+      },
+      {
+        "name": "Afonso Padilha",
+        "booksCount": 1,
+        "picture": "https://sscdn.co/gcs/studiosol/2022/mobile/author/afonso-padilha.jpg"
+      }
+    ],
+    "allBooks": [
+      {
+        "category": "TECHNOLOGY",
+        "name": "Clean Code: A Handbook of Agile Software Craftsmanship",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/clean-code.jpg",
+        "author": "Robert Cecil Martin"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Clean Architecture: A Craftsman's Guide to Software Structure and Design",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/clean-architecture.jpg",
+        "author": "Robert Cecil Martin"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "The Clean Coder: A Code of Conduct for Professional Programmers",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/the-clean-coder.jpg",
+        "author": "Robert Cecil Martin"
+      },
+      {
+        "category": "TECHNOLOGY",
+        "name": "Clean Agile: Back to Basics",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/clean-agile.jpg",
+        "author": "Robert Cecil Martin"
+      },
+      {
+        "category": "TRAVEL",
+        "name": "Lonely Planet Chile & Easter Island",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/lonely-planet-chile-e-easter-island.jpg",
+        "author": "Carolyn McCarthy"
+      },
+      {
+        "category": "TRAVEL",
+        "name": "Lonely Planet Argentina",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/lonely-planet-argentina.jpg",
+        "author": "Carolyn McCarthy"
+      },
+      {
+        "category": "TRAVEL",
+        "name": "Lonely Planet Southwest USA",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/lonely-planet-southwest-usa.jpg",
+        "author": "Carolyn McCarthy"
+      },
+      {
+        "category": "TRAVEL",
+        "name": "Lonely Planet Colorado",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/lonely-planet-colorado.jpg",
+        "author": "Carolyn McCarthy"
+      },
+      {
+        "category": "TRAVEL",
+        "name": "Lonely Planet Peru",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/lonely-planet-peru.jpg",
+        "author": "Carolyn McCarthy"
+      },
+      {
+        "category": "HORROR",
+        "name": "It: A Novel",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/it-a-novel.jpg",
+        "author": "Stephen King"
+      },
+      {
+        "category": "ADVENTURE",
+        "name": "The Hobbit",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/the-hobbit.jpg",
+        "author": "J. R. R. Tolkien"
+      },
+      {
+        "category": "ADVENTURE",
+        "name": "The Lord of the Rings",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/the-lord-of-the-rings.jpg",
+        "author": "J. R. R. Tolkien"
+      },
+      {
+        "category": "ADVENTURE",
+        "name": "Beowulf: A Translation and Commentary, together with Sellic Spell",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/beowulf.jpg",
+        "author": "J. R. R. Tolkien"
+      },
+      {
+        "category": "ADVENTURE",
+        "name": "The Silmarillion",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/the-silmarillion.jpg",
+        "author": "J. R. R. Tolkien"
+      },
+      {
+        "category": "COMEDY",
+        "name": "O Evangelho Segundo um Humorista",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/o-evangelho-segundo-um-humorista.jpg",
+        "author": "Afonso Padilha"
+      },
+      {
+        "category": "ROMANCE",
+        "name": "The Rescue",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/the-rescue.jpg",
+        "author": "Nicholas Sparks"
+      },
+      {
+        "category": "ROMANCE",
+        "name": "The Return",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/the-return.jpg",
+        "author": "Nicholas Sparks"
+      },
+      {
+        "category": "ROMANCE",
+        "name": "Every Breath",
+        "cover": "https://sscdn.co/gcs/studiosol/2022/mobile/book/every-breath.jpg",
+        "author": "Nicholas Sparks"
+      }
+    ]
+  }
+}
+

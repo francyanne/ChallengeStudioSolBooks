@@ -1,0 +1,6 @@
+framework module Pods_ChallengeStudioSol {
+  umbrella header "Pods-ChallengeStudioSol-umbrella.h"
+
+  export *
+  module * { export * }
+}
