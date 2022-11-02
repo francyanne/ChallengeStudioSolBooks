@@ -164,8 +164,8 @@
 		5C705F572911CF3800971C46 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				5C705F592911CF4500971C46 /* Cells */,
 				5C705F582911CF3D00971C46 /* Model */,
+				5C705F592911CF4500971C46 /* Cells */,
 				5C705F5A2911CF6700971C46 /* HomeViewController.swift */,
 				5C705F5B2911CF6700971C46 /* HomeViewController.xib */,
 				5C8E178E2911D51A00692F64 /* HomeViewModel.swift */,

@@ -11,7 +11,6 @@ import SDWebImage
 final class HomeViewController: UIViewController {
     // MARK: Properties
     var libraryCollectionCellNames = ["Technology", "Travel", "Horror", "Adventure", "Comedy", "Romance"]
-    let detail = DetailBooksViewController()
     var homeVM = HomeViewModel()
     var model: Books?
     
@@ -55,18 +54,30 @@ final class HomeViewController: UIViewController {
         tableViewAllBooks.dataSource = self
     }
     
+    private func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel))
+        present(alert, animated: true)
+    }
+    
     private func registerCells() {
         collectionViewFavoriteBooks.register(UINib(nibName: "FavoriteBooksCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
         collectionViewFavoriteAuthors.register(UINib(nibName: "FavoriteAuthorsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cells")
         collectionViewLibrary.register(UINib(nibName: "CategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
         tableViewAllBooks.register(UINib(nibName: "AllBooksTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
-    
-    private func hidePurpleLineTop() {
-        
-    }
+
     // MARK: Actions
+    @IBAction func handlerButtonBorrowed(_ sender: Any) {
+        showAlert(title: "Ops...", message: "Sessão emprestados não encontrada")
+    }
+    @IBAction func buttonSeeAllBooks(_ sender: Any) {
+        showAlert(title: "Ops...", message: "Parece que não tem nada por aqui")
+    }
     
+    @IBAction func buttonSeeAllAuthors(_ sender: Any) {
+        showAlert(title: "Ops...", message: "Parece que não tem nada por aqui")
+    }
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -82,6 +93,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == collectionViewFavoriteBooks {
+            let detail = DetailBooksViewController()
             detail.modalPresentationStyle = .fullScreen
             detail.modalTransitionStyle = .coverVertical
             present(detail, animated: true)

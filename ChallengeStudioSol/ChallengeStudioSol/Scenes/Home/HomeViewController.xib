@@ -66,6 +66,9 @@
                     <buttonConfiguration key="configuration" style="plain" title="Emprestados">
                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="handlerButtonBorrowed:" destination="-1" eventType="touchUpInside" id="Wej-T2-O1e"/>
+                    </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="- Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="2Xz-me-xUW">
                     <rect key="frame" x="362" y="50" width="32" height="32"/>
@@ -89,12 +92,6 @@
                                             <color key="textColor" name="labelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ver todos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lte-Zr-EGj">
-                                            <rect key="frame" x="326" y="35" width="68" height="18"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                            <color key="textColor" name="TabBarSelected"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="76G-Mo-OOC">
                                             <rect key="frame" x="0.0" y="76" width="414" height="260"/>
                                             <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -115,12 +112,6 @@
                                             <rect key="frame" x="20" y="390" width="157" height="24"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                             <color key="textColor" name="labelColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ver todos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpG-E2-slY">
-                                            <rect key="frame" x="326" y="393" width="68" height="18"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                            <color key="textColor" name="TabBarSelected"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rjy-se-u9F">
@@ -159,9 +150,33 @@
                                             <rect key="frame" x="0.0" y="649" width="414" height="538"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         </tableView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKB-z6-inZ">
+                                            <rect key="frame" x="315" y="28.5" width="89" height="31"/>
+                                            <color key="tintColor" name="TabBarSelected"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="ver todos">
+                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="buttonSeeAllBooks:" destination="-1" eventType="touchUpInside" id="XoI-eU-Cg0"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rd-bV-oG4">
+                                            <rect key="frame" x="315" y="386.5" width="89" height="31"/>
+                                            <color key="tintColor" name="TabBarSelected"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="ver todos">
+                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="buttonSeeAllAuthors:" destination="-1" eventType="touchUpInside" id="ozz-ma-GYg"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="LKB-z6-inZ" secondAttribute="trailing" constant="10" id="0lG-hA-HVW"/>
+                                        <constraint firstAttribute="trailing" secondItem="1rd-bV-oG4" secondAttribute="trailing" constant="10" id="2Gl-GB-iyi"/>
                                         <constraint firstItem="NyH-yh-ETw" firstAttribute="leading" secondItem="35t-GA-3CM" secondAttribute="leading" constant="20" id="6hd-7X-8gM"/>
                                         <constraint firstAttribute="bottom" secondItem="8wc-l7-PGd" secondAttribute="bottom" id="8Ur-iQ-Iae"/>
                                         <constraint firstAttribute="trailing" secondItem="8wc-l7-PGd" secondAttribute="trailing" id="AlB-IX-4zu"/>
@@ -173,22 +188,20 @@
                                         <constraint firstAttribute="trailing" secondItem="gcu-Jg-tmT" secondAttribute="trailing" id="LFb-98-CCx"/>
                                         <constraint firstItem="76G-Mo-OOC" firstAttribute="leading" secondItem="35t-GA-3CM" secondAttribute="leading" id="Lpi-Cr-SHJ"/>
                                         <constraint firstItem="76G-Mo-OOC" firstAttribute="top" secondItem="NyH-yh-ETw" secondAttribute="bottom" constant="20" id="MCD-bU-bMV"/>
+                                        <constraint firstItem="1rd-bV-oG4" firstAttribute="centerY" secondItem="YYY-e9-JvX" secondAttribute="centerY" id="NaH-qB-9TM"/>
                                         <constraint firstItem="rjy-se-u9F" firstAttribute="leading" secondItem="35t-GA-3CM" secondAttribute="leading" id="QIA-4G-oYC"/>
                                         <constraint firstItem="YYY-e9-JvX" firstAttribute="top" secondItem="76G-Mo-OOC" secondAttribute="bottom" constant="54" id="RWt-3f-Nfw"/>
-                                        <constraint firstAttribute="trailing" secondItem="lte-Zr-EGj" secondAttribute="trailing" constant="20" id="Tj3-e7-o0a"/>
                                         <constraint firstItem="rjy-se-u9F" firstAttribute="top" secondItem="YYY-e9-JvX" secondAttribute="bottom" constant="22" id="UAs-FP-fEo"/>
                                         <constraint firstItem="S6n-aW-5MM" firstAttribute="top" secondItem="rjy-se-u9F" secondAttribute="bottom" constant="25" id="W3N-lI-ZcR"/>
                                         <constraint firstItem="4R1-gO-Bgg" firstAttribute="leading" secondItem="35t-GA-3CM" secondAttribute="leading" id="Y6e-Ty-DxV"/>
-                                        <constraint firstAttribute="trailing" secondItem="zpG-E2-slY" secondAttribute="trailing" constant="20" id="Ymy-wU-tkf"/>
                                         <constraint firstAttribute="trailing" secondItem="4R1-gO-Bgg" secondAttribute="trailing" id="ZWM-sC-Weh"/>
                                         <constraint firstItem="YYY-e9-JvX" firstAttribute="leading" secondItem="35t-GA-3CM" secondAttribute="leading" constant="20" symbolic="YES" id="c70-d1-GH8"/>
                                         <constraint firstItem="gcu-Jg-tmT" firstAttribute="leading" secondItem="35t-GA-3CM" secondAttribute="leading" id="dew-KL-E4o"/>
                                         <constraint firstAttribute="trailing" secondItem="76G-Mo-OOC" secondAttribute="trailing" id="f6U-5m-9yf"/>
-                                        <constraint firstItem="lte-Zr-EGj" firstAttribute="centerY" secondItem="NyH-yh-ETw" secondAttribute="centerY" id="hDi-2W-8mN"/>
-                                        <constraint firstItem="zpG-E2-slY" firstAttribute="centerY" secondItem="YYY-e9-JvX" secondAttribute="centerY" id="hT1-qd-lXF"/>
                                         <constraint firstItem="NyH-yh-ETw" firstAttribute="top" secondItem="35t-GA-3CM" secondAttribute="top" constant="32" id="iwe-eo-0kF"/>
                                         <constraint firstItem="S6n-aW-5MM" firstAttribute="leading" secondItem="35t-GA-3CM" secondAttribute="leading" constant="20" id="lHH-lE-7uq"/>
                                         <constraint firstItem="8wc-l7-PGd" firstAttribute="top" secondItem="76G-Mo-OOC" secondAttribute="bottom" constant="20" id="mdj-eE-K9s"/>
+                                        <constraint firstItem="LKB-z6-inZ" firstAttribute="centerY" secondItem="NyH-yh-ETw" secondAttribute="centerY" id="vNy-UE-Nxi"/>
                                     </constraints>
                                 </view>
                             </subviews>

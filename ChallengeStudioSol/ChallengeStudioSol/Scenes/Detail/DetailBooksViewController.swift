@@ -28,7 +28,7 @@ class DetailBooksViewController: UIViewController {
     private func fillButtonHeart(emptyHeart: Bool) {
         emptyHeart ? buttonHeart.setImage(UIImage(named: "heart"), for: .normal) : buttonHeart.setImage(UIImage(named: "purpleHeart"), for: .normal)
     }
-
+    
     // MARK: Actions
     @IBAction func handlerButtonBack(_ sender: Any) {
         dismiss(animated: true)
